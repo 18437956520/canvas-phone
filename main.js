@@ -3,7 +3,7 @@ var context = yyy.getContext('2d') //获取2d上下文
 
 autoSetCanvasSize(yyy)
 
-/********************/
+/*********************/
 
 listenToUser(yyy)
 
