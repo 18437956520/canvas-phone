@@ -23,6 +23,10 @@ brush.onclick = function () {
     eraser.classList.remove('active')
 }
 
+clear.onclick = function(){
+    context.clearRect(0, 0, yyy.width, yyy.height)
+}
+
 black.onclick = function () {
     context.strokeStyle = 'black'
     black.classList.add('active')
