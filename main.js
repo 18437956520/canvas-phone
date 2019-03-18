@@ -27,6 +27,16 @@ clear.onclick = function(){
     context.clearRect(0, 0, yyy.width, yyy.height)
 }
 
+save.onclick = function(){
+    var url = yyy.toDataURL("image/png")
+    var a = document.createElement('a')
+    document.body.appendChild(a)
+    a.href = url
+    a.download = '我的作品'
+    a.target = "_blank"
+    a.click()
+}
+
 black.onclick = function () {
     context.strokeStyle = 'black'
     black.classList.add('active')
